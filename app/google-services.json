@@ -1,0 +1,87 @@
+{
+  "project_info": {
+    "project_number": "580714636293",
+    "project_id": "firebase-parkbnb"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:580714636293:android:27d689d63f1b7a06",
+        "android_client_info": {
+          "package_name": "com.finalproject.parkbnb"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "580714636293-j9dfgeruf175kn6bssums50ncqkpfkth.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.finalproject.parkbnb",
+            "certificate_hash": "6A0FE76F6FD38F5299508D76A0FDA3E131C063FA"
+          }
+        },
+        {
+          "client_id": "580714636293-3kln6jgcf8jrk6bu1lu99ua0vav84ddq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCzXT89EyKimik8-EChiTYLQZaBt6RO6Ks"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:580714636293:android:f21db2fa2f57c035",
+        "android_client_info": {
+          "package_name": "com.finalproject.parkbnb"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "580714636293-q1ecou9di9nk0t6p00ocr6i2uur4sh15.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.finalproject.parkbnb",
+            "certificate_hash": "6A0FE76F6FD38F5299508D76A0FDA3E131C063FA"
+          }
+        },
+        {
+          "client_id": "580714636293-3kln6jgcf8jrk6bu1lu99ua0vav84ddq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCzXT89EyKimik8-EChiTYLQZaBt6RO6Ks"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

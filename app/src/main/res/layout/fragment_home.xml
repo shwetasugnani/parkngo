@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.finalproject.parkbnb.HomeFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="85dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:src="@drawable/car_icon_2"
+            android:scaleType="centerInside"
+            android:id="@+id/icon"
+            />
+
+        <Button
+            android:layout_width="180dp"
+            android:layout_height="50dp"
+            android:background="#AEA8D3"
+            android:text="Find Parking"
+            android:id="@+id/parkingbutton"
+            android:layout_marginBottom="10dp"
+            />
+
+        <Button
+            android:layout_width="180dp"
+            android:layout_height="50dp"
+            android:background="#674172"
+            android:textColor="#FFFFFF"
+            android:text="Add Parking"
+            android:layout_marginBottom="10dp"
+            android:onClick="addParking"/>
+
+        <Button
+            android:layout_width="180dp"
+            android:layout_height="50dp"
+            android:background="#AEA8D3"
+            android:text="Your Spots"
+            android:layout_marginBottom="10dp"
+            android:onClick="yourSpots"
+            />
+
+
+
+    </LinearLayout>
+
+
+
+</FrameLayout>
+

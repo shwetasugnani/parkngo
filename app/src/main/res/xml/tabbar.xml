@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <tabs>
+        <tab
+            id="@+id/tab_home"
+            icon="@drawable/ic_home"
+            title="Home"
+            activeColor="#000000"
+            barColorWhenSelected="#AEA8D3"/>
+        <tab
+            id="@+id/tab_nearby"
+            icon="@drawable/ic_car"
+            title="Nearby"
+
+            activeColor="#000000"
+            barColorWhenSelected="#F9BF3B"/>
+        <tab
+            id="@+id/tab_add"
+            icon="@drawable/ic_add"
+            title="Bids"
+            activeColor="#000000"
+
+            barColorWhenSelected="#87D37C"/>
+        <tab
+            id="@+id/tab_information"
+            icon="@drawable/ic_settings"
+            title="Info"
+            activeColor="#000000"
+
+            barColorWhenSelected="#81CFE0"
+            />
+    </tabs>
