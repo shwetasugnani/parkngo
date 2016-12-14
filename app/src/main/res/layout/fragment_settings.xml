@@ -1,0 +1,222 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.finalproject.parkbnb.SettingsFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin">
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="Shweta Sugnani"
+        android:textSize="20dp"
+        android:ems="10"
+        android:id="@+id/username"
+        android:layout_alignTop="@+id/userimage"
+        android:layout_toEndOf="@+id/userimage"
+        android:layout_marginStart="18dp"
+        android:layout_alignBottom="@+id/userimage" />
+
+        <TextView
+        android:text="Member Since: "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:id="@+id/heightlabel"
+        android:layout_below="@+id/username"
+        android:layout_toEndOf="@+id/userimage" />
+
+    <TextView
+        android:text="Age: "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/username"
+        android:layout_alignEnd="@+id/username"
+        android:layout_marginEnd="69dp"
+        android:id="@+id/weightlabel" />
+
+    <TextView
+        android:layout_width="420dp"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="2014"
+        android:textSize="15dp"
+        android:ems="10"
+        android:id="@+id/heightvalue"
+        android:layout_alignBottom="@+id/heightlabel"
+        android:layout_toEndOf="@+id/heightlabel"
+        android:layout_below="@+id/username" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="22"
+        android:textSize="15dp"
+        android:ems="5"
+        android:id="@+id/weightvalue"
+
+        android:layout_alignBaseline="@+id/weightlabel"
+        android:layout_alignBottom="@+id/weightlabel"
+        android:layout_alignStart="@+id/weightlabel"
+        android:layout_marginStart="58dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/heightvalue"
+        android:layout_alignParentStart="true"
+        android:id="@+id/avgweeklylabel"
+        android:layout_alignParentEnd="true"
+        android:text="Information"
+        android:background="#DADFE1"
+        android:textSize="15sp" />
+
+    <TextView
+        android:text="Credit Card"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/avgweeklylabel"
+        android:layout_alignParentStart="true"
+        android:id="@+id/distancelabel2"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:textSize="15sp"
+        android:lineSpacingExtra="5sp"
+        android:layout_alignEnd="@+id/weightlabel" />
+
+    <TextView
+        android:text="Visa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+
+        android:id="@+id/distanceValue"
+        android:layout_below="@+id/avgweeklylabel"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/weightlabel"
+        android:textSize="15sp"
+        android:lineSpacingExtra="5sp"
+        android:layout_alignStart="@+id/weightvalue" />
+
+    <TextView
+        android:text="Address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/distancelabel2"
+        android:layout_alignParentStart="true"
+        android:id="@+id/timeLabel"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:textSize="15sp"
+        android:lineSpacingExtra="5sp"
+        android:layout_alignEnd="@+id/weightlabel" />
+
+    <TextView
+        android:text="SJSU"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+
+        android:id="@+id/timeValue"
+        android:layout_below="@+id/distanceValue"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/distancelabel2"
+        android:textSize="15sp"
+        android:lineSpacingExtra="5sp"
+        android:layout_alignStart="@+id/distanceValue" />
+
+    <TextView
+        android:text="History (Parking Spots)"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/timeLabel"
+        android:layout_alignParentStart="true"
+        android:id="@+id/workoutLabel"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:textSize="15sp"
+        android:lineSpacingExtra="5sp"
+        android:layout_alignEnd="@+id/weightlabel" />
+
+    <TextView
+        android:text=""
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+
+        android:id="@+id/workoutValue"
+        android:layout_below="@+id/timeValue"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/workoutLabel"
+        android:textSize="15sp"
+        android:lineSpacingExtra="5sp" />
+
+    <TextView
+        android:text="Extras"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/workoutLabel"
+        android:layout_alignParentStart="true"
+        android:id="@+id/caloriesBurnLabel"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:textSize="15sp"
+        android:lineSpacingExtra="5sp"
+        android:layout_alignEnd="@+id/workoutLabel" />
+
+    <TextView
+        android:text=""
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+
+        android:id="@+id/caloriesBurnValue"
+        android:layout_below="@+id/workoutValue"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/caloriesBurnLabel"
+        android:textSize="15sp"
+        android:lineSpacingExtra="5sp" />
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/userprofileimg"
+            android:scaleType="centerInside"
+            android:id="@+id/userimage"
+            android:layout_marginStart="18dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="17dp" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="DELETE ACCOUNT"
+            android:layout_marginTop="30dp"
+            android:id="@+id/delete"
+            android:layout_below="@+id/caloriesBurnLabel"
+            android:background="#D91E18"
+
+            android:textColor="#fff"/>
+    </RelativeLayout>
+    </ScrollView>
+
+</FrameLayout>

@@ -5,6 +5,8 @@ import android.app.Fragment;
 import android.app.FragmentTransaction;
 import android.content.Context;
 import android.content.DialogInterface;
+import android.content.Intent;
+import android.content.res.Configuration;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -13,6 +15,7 @@ import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
+import android.widget.Toast;
 
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
@@ -46,8 +49,8 @@ public class ParkingFragmentHorizontal extends Fragment implements OnMapReadyCal
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View rootView =  inflater.inflate(R.layout.fragment_parking_horizontal, container, false);
-
+        View rootView = inflater.inflate(R.layout.fragment_parking_horizontal, container, false);;
+        final Configuration config = getActivity().getResources().getConfiguration();
         relativelayout = (RelativeLayout) rootView.findViewById(R.id.relativelayout);
         bookscreen = (LinearLayout) rootView.findViewById(R.id.bookscreen);
         book = (Button) rootView.findViewById(R.id.booknow);
@@ -61,7 +64,9 @@ public class ParkingFragmentHorizontal extends Fragment implements OnMapReadyCal
                         .setMessage("Are you sure you want to book this parking?")
                         .setPositiveButton(android.R.string.yes, new DialogInterface.OnClickListener() {
                             public void onClick(DialogInterface dialog, int which) {
-                                // continue with delete
+                                Toast.makeText(getActivity(), "Hearst Apartments Parking has been booked.", Toast.LENGTH_LONG).show();
+                                Intent intent = new Intent(getActivity(), MainActivity.class);
+                                startActivity(intent);
                             }
                         })
                         .setNegativeButton(android.R.string.no, new DialogInterface.OnClickListener() {
@@ -79,7 +84,6 @@ public class ParkingFragmentHorizontal extends Fragment implements OnMapReadyCal
         FragmentTransaction transaction = getChildFragmentManager().beginTransaction();
         transaction.add(R.id.map, mapFragment).commit();
         mapFragment.getMapAsync(this);
-
 
 
 

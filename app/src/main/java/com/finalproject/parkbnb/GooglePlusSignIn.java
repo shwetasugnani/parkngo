@@ -100,6 +100,8 @@ public class GooglePlusSignIn extends Activity implements OnClickListener, Conne
         }
     }
 
+
+
     @Override
     protected void onActivityResult(int requestCode, int responseCode, Intent intent) {
         switch (requestCode) {

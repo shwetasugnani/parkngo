@@ -46,6 +46,19 @@ public class MainActivity extends FragmentActivity {
                         ft.commit();
                     }
                 }
+                else if (tabId == R.id.tab_add){
+
+                    FragmentTransaction ft = getFragmentManager().beginTransaction();
+
+                    ft.replace(R.id.contentContainer, new AddParkingFragment(), "NewFragmentTag");
+                    ft.commit();
+                }
+                else if (tabId == R.id.tab_information){
+                    FragmentTransaction ft = getFragmentManager().beginTransaction();
+
+                    ft.replace(R.id.contentContainer, new SettingsFragment(), "NewFragmentTag");
+                    ft.commit();
+                }
 
             }
         });

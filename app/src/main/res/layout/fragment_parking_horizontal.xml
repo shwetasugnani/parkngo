@@ -55,6 +55,7 @@
         android:layout_height="match_parent"
         android:orientation="vertical"
         android:gravity="center"
+        android:paddingLeft="200dp"
         android:id="@+id/bookscreen"
         android:weightSum="1">
 
@@ -62,7 +63,7 @@
         <ImageView
             android:layout_width="156dp"
             android:layout_height="117dp"
-            app:srcCompat="@drawable/ic_social_person"
+            android:src="@drawable/parking"
             android:id="@+id/aptimg" />
 
         <TextView
@@ -80,6 +81,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="BOOK NOW"
+
             android:id="@+id/booknow"
             android:background="#26A65B"
             android:textColor="#FFFFFF"/>
